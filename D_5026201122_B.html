@@ -139,9 +139,6 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            $.validator.addMethod("alphabetonly", function (value, element) {
-                return this.optional(element) || /^[a-z\s]+$/i.test(value);
-            }, "Only alphabetical characters");
             $('#formku').validate({
                 rules: {
                     namabarang: {
